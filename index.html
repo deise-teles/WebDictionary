@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Web Dictionary Challenge</title>
+  <link rel="shortcut icon" href="/img/dark-icon.png" type="image/x-icon" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ 
+</head>
+
+<body id = "sample-text">
+
+    <div id = "functions">
+      <img src="/img/logo.png" width="50px" height="60px">
+      <select id="font-selector" onchange="changeFont()">
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-Serif</option>
+          <option value="monospace">Monospace</option>
+      </select>
+      <div class="btn" onclick="toggleTheme()" onclick="toggleButton(this)"> </div>
+      <div class="toggle-button-inner"></div>
+    </div><br/><br/>
+
+    <input type="text" id="search-input" name="search-input" placeholder="Search">
+    <button id="search"><img src="/img/lupa.png" width="20px" height="20px"></button>
+    <!--<i class="fas fa-volume-up"></i>-->
+    <div id = "result"> </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
